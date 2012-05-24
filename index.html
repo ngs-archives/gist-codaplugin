@@ -14,18 +14,37 @@
   </head>
   <body>
     <div class="wrapper">
+      <h1>Gist Plug-In for <a href="http://bit.ly/coda2appstore">Coda 2</a></h1>
       <section>
-        <h1>Gist Plug-In for <a href="http://bit.ly/coda2appstore">Coda 2</a></h1>
+        <h2>How does it work</h2>
+        <p><img src="images/screen.png" alt="screen" width="404" /></p>
+        <p>This plug-in allows you to create public and private gists from current active document.</p>
+      </section>
+      <section id="latest">
+        <h2>The latest release</h2>
+        <p>
+          <a href="#" rel="download" class="view">
+            <b id="archive-name"></b>
+            <small>
+              <b id="archive-size"></b>&nbsp;
+              <span id="archive-uploaded"></span>
+            </small>
+          </a>
+        </p>
+      </section>
+      
+      <section>
         <h2>Intalling</h2>
-        <p><a href="https://github.com/downloads/ngs/gist-codaplugin/Gist.codaplugin-1.0.0.zip">Download</a>, Unzip and Double click, that's all.</p>
-        <p><img src="images/screen.png" alt="screen" width="454" height="150" /></p>
+        <p><a href="#" rel="download">Download</a>, Unzip and Double click, that's all.</p>
         <p class="view"><a href="https://github.com/ngs/gist-codaplugin">View the Project on GitHub <small>ngs/gist-codaplugin</small></a></p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/ngs">ngs</a></p>
       </footer>
     </div>
+    <script src="javascripts/relative_date.js"></script>
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script src="javascripts/download.js"></script>
+    <script src="https://api.github.com/repos/ngs/gist-codaplugin/downloads?callback=showButton"></script>
   </body>
 </html>

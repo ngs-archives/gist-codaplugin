@@ -22,6 +22,8 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
+  margin:0;
+  padding:0 0 2em 0;
 }
 
 h2 {
@@ -41,7 +43,7 @@ a {
 a small {
   font-size:11px;
   color:#777;
-  margin-top:-0.6em;
+  margin-top:-0.2em;
   display:block;
 }
 
@@ -161,6 +163,9 @@ header ul a strong {
 
 section {
   padding-bottom:50px;
+  width:47%;
+  margin-right:3%;
+  float:left;
 }
 
 small {
@@ -181,6 +186,19 @@ footer {
   bottom:50px;
 }
 
+#latest a.view {
+  font-size:1.5em;
+  display:block;
+  background: url(../images/zip.png) no-repeat -10px 50%;
+  padding:50px 0;
+  text-indent:120px;
+}
+
+#latest a.view small {
+  font-size:0.7em;
+}
+
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
@@ -199,8 +217,7 @@ footer {
   }
   
   section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
+    border-top:1px solid #e5e5e5;
     padding:20px 0;
     margin:0 0 20px;
   }
