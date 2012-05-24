@@ -3,3 +3,4 @@
 ## Intalling
 [Download](https://github.com/downloads/ngs/gist-codaplugin/Gist.codaplugin-1.0.0.zip), Unzip and Double click, that's all.
 
+![screen](http://ngs.github.com/gist-codaplugin/images/screen.png)
