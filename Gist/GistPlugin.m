@@ -90,9 +90,10 @@
 }
 
 - (void)createGist:(BOOL)isPublic {
+  CodaTextView *tv = [self.pluginController focusedTextView:self];
+  if(!tv||!tv.string||[tv.string isEqualToString:@""]) return;
   GHKGist *gist = [[GHKGist alloc] init];
   GHKGistFile *file = [gist addEmptyFile];
-  CodaTextView *tv = [self.pluginController focusedTextView:self];
   file.content = tv.string;
   if(tv.path) {
     NSURL *URL = [[NSURL alloc] initFileURLWithPath:tv.path isDirectory:NO];
