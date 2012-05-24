@@ -9,17 +9,77 @@
 /* Begin PBXBuildFile section */
 		85E65E83156DCD79009BFC0F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E65E82156DCD79009BFC0F /* Cocoa.framework */; };
 		85E65E8D156DCD79009BFC0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85E65E8B156DCD79009BFC0F /* InfoPlist.strings */; };
+		85E65E9E156DD1A9009BFC0F /* GistPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E65E9D156DD1A9009BFC0F /* GistPlugin.m */; };
+		85E65EA2156DD1C2009BFC0F /* AuthWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E65EA0156DD1C2009BFC0F /* AuthWindowController.m */; };
+		85E65EA3156DD1C2009BFC0F /* AuthWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E65EA1156DD1C2009BFC0F /* AuthWindowController.xib */; };
+		85E65EA6156DD4BF009BFC0F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85E65EA4156DD4BF009BFC0F /* Localizable.strings */; };
+		85E65EA8156DD593009BFC0F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E65EA7156DD593009BFC0F /* WebKit.framework */; };
+		85E65F09156DDA49009BFC0F /* libGitHubKit-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E65F04156DDA3F009BFC0F /* libGitHubKit-Mac.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		85E65EBA156DD93D009BFC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E65EB1156DD93D009BFC0F /* GitHubKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 85C4B2DB1535D0EF009DE449;
+			remoteInfo = GitHubKit;
+		};
+		85E65EBC156DD93D009BFC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E65EB1156DD93D009BFC0F /* GitHubKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 85C4B2EB1535D0F0009DE449;
+			remoteInfo = GitHubKitTests;
+		};
+		85E65F03156DDA3F009BFC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E65EB1156DD93D009BFC0F /* GitHubKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 85E65EC6156DD9AC009BFC0F;
+			remoteInfo = "GitHubKit-Mac";
+		};
+		85E65F05156DDA3F009BFC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E65EB1156DD93D009BFC0F /* GitHubKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 85E65ED8156DD9AD009BFC0F;
+			remoteInfo = "GitHubKit-Mac-Tests";
+		};
+		85E65F07156DDA42009BFC0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E65EB1156DD93D009BFC0F /* GitHubKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 85E65EC5156DD9AC009BFC0F;
+			remoteInfo = "GitHubKit-Mac";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		85E65E7F156DCD79009BFC0F /* Gist.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gist.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		85E65E7F156DCD79009BFC0F /* Gist.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gist.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E65E82156DCD79009BFC0F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		85E65E85156DCD79009BFC0F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		85E65E86156DCD79009BFC0F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		85E65E87156DCD79009BFC0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		85E65E8A156DCD79009BFC0F /* Gist-Info.plist */ = {isa = PBXFileReference; path = "Gist-Info.plist"; sourceTree = "<group>"; };
+		85E65E8A156DCD79009BFC0F /* Gist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gist-Info.plist"; sourceTree = "<group>"; };
 		85E65E8C156DCD79009BFC0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		85E65E8E156DCD79009BFC0F /* Gist-Prefix.pch */ = {isa = PBXFileReference; path = "Gist-Prefix.pch"; sourceTree = "<group>"; };
+		85E65E8E156DCD79009BFC0F /* Gist-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gist-Prefix.pch"; sourceTree = "<group>"; };
+		85E65E95156DCDB6009BFC0F /* CodaPlugInsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
+		85E65E96156DCDD6009BFC0F /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		85E65E97156DCDE5009BFC0F /* Bundle.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Bundle.xcconfig; sourceTree = "<group>"; };
+		85E65E98156DCDF2009BFC0F /* Bundle-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Bundle-Debug.xcconfig"; sourceTree = "<group>"; };
+		85E65E99156DCDFC009BFC0F /* Bundle-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Bundle-Release.xcconfig"; sourceTree = "<group>"; };
+		85E65E9A156DCE2F009BFC0F /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		85E65E9B156DCE3B009BFC0F /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		85E65E9C156DD1A9009BFC0F /* GistPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GistPlugin.h; sourceTree = "<group>"; };
+		85E65E9D156DD1A9009BFC0F /* GistPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GistPlugin.m; sourceTree = "<group>"; };
+		85E65E9F156DD1C2009BFC0F /* AuthWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthWindowController.h; sourceTree = "<group>"; };
+		85E65EA0156DD1C2009BFC0F /* AuthWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthWindowController.m; sourceTree = "<group>"; };
+		85E65EA1156DD1C2009BFC0F /* AuthWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthWindowController.xib; sourceTree = "<group>"; };
+		85E65EA5156DD4BF009BFC0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		85E65EA7156DD593009BFC0F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		85E65EAF156DD76D009BFC0F /* GistPlugin-APIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GistPlugin-APIKey.h"; sourceTree = "<group>"; };
+		85E65EB1156DD93D009BFC0F /* GitHubKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GitHubKit.xcodeproj; path = Vendors/GitHubKit/src/GitHubKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E65F09156DDA49009BFC0F /* libGitHubKit-Mac.a in Frameworks */,
+				85E65EA8156DD593009BFC0F /* WebKit.framework in Frameworks */,
 				85E65E83156DCD79009BFC0F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,16 +99,19 @@
 		85E65E74156DCD79009BFC0F = {
 			isa = PBXGroup;
 			children = (
+				85E65E94156DCDA4009BFC0F /* Configurations */,
 				85E65E88156DCD79009BFC0F /* Gist */,
 				85E65E81156DCD79009BFC0F /* Frameworks */,
 				85E65E80156DCD79009BFC0F /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		85E65E80156DCD79009BFC0F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85E65E7F156DCD79009BFC0F /* Gist.bundle */,
+				85E65E7F156DCD79009BFC0F /* Gist.codaplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +119,8 @@
 		85E65E81156DCD79009BFC0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85E65EB1156DD93D009BFC0F /* GitHubKit.xcodeproj */,
+				85E65EA7156DD593009BFC0F /* WebKit.framework */,
 				85E65E82156DCD79009BFC0F /* Cocoa.framework */,
 				85E65E84156DCD79009BFC0F /* Other Frameworks */,
 			);
@@ -73,7 +140,14 @@
 		85E65E88156DCD79009BFC0F /* Gist */ = {
 			isa = PBXGroup;
 			children = (
+				85E65EAF156DD76D009BFC0F /* GistPlugin-APIKey.h */,
+				85E65E95156DCDB6009BFC0F /* CodaPlugInsController.h */,
 				85E65E89156DCD79009BFC0F /* Supporting Files */,
+				85E65E9C156DD1A9009BFC0F /* GistPlugin.h */,
+				85E65E9D156DD1A9009BFC0F /* GistPlugin.m */,
+				85E65E9F156DD1C2009BFC0F /* AuthWindowController.h */,
+				85E65EA0156DD1C2009BFC0F /* AuthWindowController.m */,
+				85E65EA1156DD1C2009BFC0F /* AuthWindowController.xib */,
 			);
 			path = Gist;
 			sourceTree = "<group>";
@@ -84,8 +158,33 @@
 				85E65E8A156DCD79009BFC0F /* Gist-Info.plist */,
 				85E65E8B156DCD79009BFC0F /* InfoPlist.strings */,
 				85E65E8E156DCD79009BFC0F /* Gist-Prefix.pch */,
+				85E65EA4156DD4BF009BFC0F /* Localizable.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85E65E94156DCDA4009BFC0F /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				85E65E96156DCDD6009BFC0F /* Project.xcconfig */,
+				85E65E9A156DCE2F009BFC0F /* Project-Debug.xcconfig */,
+				85E65E9B156DCE3B009BFC0F /* Project-Release.xcconfig */,
+				85E65E97156DCDE5009BFC0F /* Bundle.xcconfig */,
+				85E65E98156DCDF2009BFC0F /* Bundle-Debug.xcconfig */,
+				85E65E99156DCDFC009BFC0F /* Bundle-Release.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		85E65EB2156DD93D009BFC0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85E65EBB156DD93D009BFC0F /* libGitHubKit-iOS.a */,
+				85E65EBD156DD93D009BFC0F /* GitHubKit-iOS-Tests.octest */,
+				85E65F04156DDA3F009BFC0F /* libGitHubKit-Mac.a */,
+				85E65F06156DDA3F009BFC0F /* GitHubKit-Mac-Tests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,14 +197,16 @@
 				85E65E7B156DCD79009BFC0F /* Sources */,
 				85E65E7C156DCD79009BFC0F /* Frameworks */,
 				85E65E7D156DCD79009BFC0F /* Resources */,
+				85E65F3F156E0183009BFC0F /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				85E65F08156DDA42009BFC0F /* PBXTargetDependency */,
 			);
 			name = Gist;
 			productName = Gist;
-			productReference = 85E65E7F156DCD79009BFC0F /* Gist.bundle */;
+			productReference = 85E65E7F156DCD79009BFC0F /* Gist.codaplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -127,6 +228,12 @@
 			mainGroup = 85E65E74156DCD79009BFC0F;
 			productRefGroup = 85E65E80156DCD79009BFC0F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 85E65EB2156DD93D009BFC0F /* Products */;
+					ProjectRef = 85E65EB1156DD93D009BFC0F /* GitHubKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				85E65E7E156DCD79009BFC0F /* Gist */,
@@ -134,26 +241,85 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		85E65EBB156DD93D009BFC0F /* libGitHubKit-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libGitHubKit-iOS.a";
+			remoteRef = 85E65EBA156DD93D009BFC0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85E65EBD156DD93D009BFC0F /* GitHubKit-iOS-Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "GitHubKit-iOS-Tests.octest";
+			remoteRef = 85E65EBC156DD93D009BFC0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85E65F04156DDA3F009BFC0F /* libGitHubKit-Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libGitHubKit-Mac.a";
+			remoteRef = 85E65F03156DDA3F009BFC0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		85E65F06156DDA3F009BFC0F /* GitHubKit-Mac-Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "GitHubKit-Mac-Tests.octest";
+			remoteRef = 85E65F05156DDA3F009BFC0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		85E65E7D156DCD79009BFC0F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				85E65E8D156DCD79009BFC0F /* InfoPlist.strings in Resources */,
+				85E65EA3156DD1C2009BFC0F /* AuthWindowController.xib in Resources */,
+				85E65EA6156DD4BF009BFC0F /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85E65F3F156E0183009BFC0F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $INSTALL_BUNDLE == 1 ]; then\n  DEST=\"$USER_LIBRARY_DIR/Application Support/Coda 2/Plug-ins/$FULL_PRODUCT_NAME\"\n  ORG=\"$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\"\n  rm -rf \"$DEST\"\n  mv \"$ORG\" \"$DEST\"\n\n  osascript <<\\EOF\n    tell application \"Coda 2\"\n      quit\n    end tell\n    delay 2 -- Wait for Coda 2 to close\n    tell application \"Coda 2\" to activate\nEOF\n\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85E65E7B156DCD79009BFC0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E65E9E156DD1A9009BFC0F /* GistPlugin.m in Sources */,
+				85E65EA2156DD1C2009BFC0F /* AuthWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85E65F08156DDA42009BFC0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GitHubKit-Mac";
+			targetProxy = 85E65F07156DDA42009BFC0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		85E65E8B156DCD79009BFC0F /* InfoPlist.strings */ = {
@@ -164,77 +330,42 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		85E65EA4156DD4BF009BFC0F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85E65EA5156DD4BF009BFC0F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		85E65E8F156DCD79009BFC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85E65E9A156DCE2F009BFC0F /* Project-Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		85E65E90156DCD79009BFC0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85E65E9B156DCE3B009BFC0F /* Project-Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		85E65E92156DCD79009BFC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85E65E98156DCDF2009BFC0F /* Bundle-Debug.xcconfig */;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Gist/Gist-Prefix.pch";
-				INFOPLIST_FILE = "Gist/Gist-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
 		85E65E93156DCD79009BFC0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85E65E99156DCDFC009BFC0F /* Bundle-Release.xcconfig */;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Gist/Gist-Prefix.pch";
-				INFOPLIST_FILE = "Gist/Gist-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -257,6 +388,7 @@
 				85E65E93156DCD79009BFC0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,3 @@
+[submodule "Vendors/GitHubKit"]
+	path = Vendors/GitHubKit
+	url = git@github.com:githubkit/githubkit.git

@@ -1,0 +1,5 @@
+GistPlugin-APIKey.h
+.DS_Store
+*.swp
+build
+*.xcuserdatad
