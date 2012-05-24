@@ -50,11 +50,22 @@
   if(self=[self init]) {
     self.pluginController = aController;
     [aController registerActionWithTitle:NSLocalizedString(@"Create Private Gist", nil)
+                   underSubmenuWithTitle:nil
                                   target:self
-                                selector:@selector(createPrivateGist:)];
+                                selector:@selector(createPrivateGist:)
+                       representedObject:nil
+                           keyEquivalent:@"^~@g"
+                              pluginName:self.name];
+    
+    
     [aController registerActionWithTitle:NSLocalizedString(@"Create Public Gist", nil)
+                   underSubmenuWithTitle:nil
                                   target:self
-                                selector:@selector(createPublicGist:)];;
+                                selector:@selector(createPublicGist:)
+                       representedObject:nil
+                           keyEquivalent:@"$^~@g"
+                              pluginName:self.name];
+    
     [aController registerActionWithTitle:NSLocalizedString(@"Logout", nil)
                                   target:self
                                 selector:@selector(logout:)];
@@ -94,6 +105,7 @@
   if(!tv||!tv.string||[tv.string isEqualToString:@""]) return;
   GHKGist *gist = [[GHKGist alloc] init];
   GHKGistFile *file = [gist addEmptyFile];
+  gist.isPublic = isPublic;
   file.content = tv.string;
   if(tv.path) {
     NSURL *URL = [[NSURL alloc] initFileURLWithPath:tv.path isDirectory:NO];
