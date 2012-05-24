@@ -1,6 +1,25 @@
-# Gist Plug-In for [Coda 2](http://bit.ly/coda2appstore)
+# Gist Plug-In for [Coda 2][appstore]
+
+## How does it work
+
+![screen][screen]
+
+This plug-in allows you to create public and private gists from current active document.
 
 ## Intalling
-[Download](https://github.com/downloads/ngs/gist-codaplugin/Gist.codaplugin-1.0.0.zip), Unzip and Double click, that's all.
+[Download][download], Unzip and Double click, that's all.
 
-![screen](http://ngs.github.com/gist-codaplugin/images/screen.png)
+## Shortcuts
+<dl>
+  <dt>^&#x2325;&#8984;G</dt>
+  <dd>Create Private Gist</dd>
+</dl>
+<dl>
+  <dt>^&#x2325;&#x21E7;&#8984;G</dt>
+  <dd>Create Public Gist</dd>
+</dl>
+
+
+[appstore]: http://bit.ly/coda2appstore
+[screen]: http://ngs.github.com/gist-codaplugin/images/screen.png
+[download]: https://github.com/downloads/ngs/gist-codaplugin/Gist.codaplugin-1.0.0.zip
