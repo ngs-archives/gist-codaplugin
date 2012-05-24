@@ -1,0 +1,5 @@
+# Gist Plug-In for [Coda 2](http://bit.ly/coda2appstore)
+
+## Intalling
+[Download](https://github.com/ngs/gist-codaplugin/downloads), Unzip and Double click, that's all.
+
