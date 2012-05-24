@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Gist' target in the 'Gist' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
