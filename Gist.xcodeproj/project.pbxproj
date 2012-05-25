@@ -297,7 +297,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ $INSTALL_BUNDLE == 1 ]; then\n  DEST=\"$USER_LIBRARY_DIR/Application Support/Coda 2/Plug-ins/$FULL_PRODUCT_NAME\"\n  ORG=\"$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\"\n  rm -rf \"$DEST\"\n  mv \"$ORG\" \"$DEST\"\n\n  osascript <<\\EOF\n    tell application \"Coda 2\"\n      quit\n    end tell\n    delay 2 -- Wait for Coda 2 to close\n    tell application \"Coda 2\" to activate\nEOF\n\nfi\n";
+			shellScript = "if [ $INSTALL_BUNDLE == 1 ]; then\n  DEST=\"$USER_LIBRARY_DIR/Application Support/Coda 2/Plug-ins/$FULL_PRODUCT_NAME\"\n  ORG=\"$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\"\n  rm -rf \"$DEST\"\n  mv \"$ORG\" \"$DEST\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
