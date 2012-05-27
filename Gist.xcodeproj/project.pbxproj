@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85010BD21572BCE3004E0579 /* Bundle-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC11572BCE3004E0579 /* Bundle-Debug.xcconfig */; };
+		85010BD31572BCE3004E0579 /* Bundle-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC21572BCE3004E0579 /* Bundle-Release.xcconfig */; };
+		85010BD41572BCE3004E0579 /* Bundle.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC31572BCE3004E0579 /* Bundle.xcconfig */; };
+		85010BD51572BCE3004E0579 /* Project-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC41572BCE3004E0579 /* Project-Debug.xcconfig */; };
+		85010BD61572BCE3004E0579 /* Project-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC51572BCE3004E0579 /* Project-Release.xcconfig */; };
+		85010BD71572BCE3004E0579 /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC61572BCE3004E0579 /* Project.xcconfig */; };
+		85010BD81572BCE3004E0579 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC71572BCE3004E0579 /* InfoPlist.strings */; };
+		85010BDA1572BCE3004E0579 /* WikiPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85010BCD1572BCE3004E0579 /* WikiPlugin.m */; };
+		85010BDB1572BCE3004E0579 /* WikiPreviewWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85010BCE1572BCE3004E0579 /* WikiPreviewWindow.xib */; };
+		85010BDC1572BCE3004E0579 /* WikiPreviewWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85010BD01572BCE3004E0579 /* WikiPreviewWindowController.m */; };
+		85010BE11572BE4E004E0579 /* Gist-Project-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BDE1572BE4E004E0579 /* Gist-Project-Debug.xcconfig */; };
+		85010BE21572BE4E004E0579 /* Gist-Project-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BDF1572BE4E004E0579 /* Gist-Project-Release.xcconfig */; };
+		85010BE31572BE4E004E0579 /* Gist.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BE01572BE4E004E0579 /* Gist.xcconfig */; };
 		85E65E83156DCD79009BFC0F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E65E82156DCD79009BFC0F /* Cocoa.framework */; };
-		85E65E8D156DCD79009BFC0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85E65E8B156DCD79009BFC0F /* InfoPlist.strings */; };
 		85E65E9E156DD1A9009BFC0F /* GistPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E65E9D156DD1A9009BFC0F /* GistPlugin.m */; };
 		85E65EA2156DD1C2009BFC0F /* AuthWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E65EA0156DD1C2009BFC0F /* AuthWindowController.m */; };
 		85E65EA3156DD1C2009BFC0F /* AuthWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E65EA1156DD1C2009BFC0F /* AuthWindowController.xib */; };
-		85E65EA6156DD4BF009BFC0F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85E65EA4156DD4BF009BFC0F /* Localizable.strings */; };
 		85E65EA8156DD593009BFC0F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E65EA7156DD593009BFC0F /* WebKit.framework */; };
 		85E65F09156DDA49009BFC0F /* libGitHubKit-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E65F04156DDA3F009BFC0F /* libGitHubKit-Mac.a */; };
 /* End PBXBuildFile section */
@@ -56,27 +67,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85010BC11572BCE3004E0579 /* Bundle-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Bundle-Debug.xcconfig"; sourceTree = "<group>"; };
+		85010BC21572BCE3004E0579 /* Bundle-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Bundle-Release.xcconfig"; sourceTree = "<group>"; };
+		85010BC31572BCE3004E0579 /* Bundle.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Bundle.xcconfig; sourceTree = "<group>"; };
+		85010BC41572BCE3004E0579 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		85010BC51572BCE3004E0579 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
+		85010BC61572BCE3004E0579 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		85010BC81572BCE3004E0579 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85010BCB1572BCE3004E0579 /* CodaPlugInsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
+		85010BCC1572BCE3004E0579 /* WikiPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiPlugin.h; sourceTree = "<group>"; };
+		85010BCD1572BCE3004E0579 /* WikiPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiPlugin.m; sourceTree = "<group>"; };
+		85010BCE1572BCE3004E0579 /* WikiPreviewWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WikiPreviewWindow.xib; sourceTree = "<group>"; };
+		85010BCF1572BCE3004E0579 /* WikiPreviewWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiPreviewWindowController.h; sourceTree = "<group>"; };
+		85010BD01572BCE3004E0579 /* WikiPreviewWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiPreviewWindowController.m; sourceTree = "<group>"; };
+		85010BDE1572BE4E004E0579 /* Gist-Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Gist-Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		85010BDF1572BE4E004E0579 /* Gist-Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Gist-Project-Release.xcconfig"; sourceTree = "<group>"; };
+		85010BE01572BE4E004E0579 /* Gist.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Gist.xcconfig; sourceTree = "<group>"; };
 		85E65E7F156DCD79009BFC0F /* Gist.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gist.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E65E82156DCD79009BFC0F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		85E65E85156DCD79009BFC0F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		85E65E86156DCD79009BFC0F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		85E65E87156DCD79009BFC0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		85E65E8A156DCD79009BFC0F /* Gist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gist-Info.plist"; sourceTree = "<group>"; };
-		85E65E8C156DCD79009BFC0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		85E65E8E156DCD79009BFC0F /* Gist-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gist-Prefix.pch"; sourceTree = "<group>"; };
-		85E65E95156DCDB6009BFC0F /* CodaPlugInsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
-		85E65E96156DCDD6009BFC0F /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
-		85E65E97156DCDE5009BFC0F /* Bundle.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Bundle.xcconfig; sourceTree = "<group>"; };
-		85E65E98156DCDF2009BFC0F /* Bundle-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Bundle-Debug.xcconfig"; sourceTree = "<group>"; };
-		85E65E99156DCDFC009BFC0F /* Bundle-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Bundle-Release.xcconfig"; sourceTree = "<group>"; };
-		85E65E9A156DCE2F009BFC0F /* Project-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
-		85E65E9B156DCE3B009BFC0F /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
 		85E65E9C156DD1A9009BFC0F /* GistPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GistPlugin.h; sourceTree = "<group>"; };
 		85E65E9D156DD1A9009BFC0F /* GistPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GistPlugin.m; sourceTree = "<group>"; };
 		85E65E9F156DD1C2009BFC0F /* AuthWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthWindowController.h; sourceTree = "<group>"; };
 		85E65EA0156DD1C2009BFC0F /* AuthWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthWindowController.m; sourceTree = "<group>"; };
 		85E65EA1156DD1C2009BFC0F /* AuthWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthWindowController.xib; sourceTree = "<group>"; };
-		85E65EA5156DD4BF009BFC0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		85E65EA7156DD593009BFC0F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		85E65EAF156DD76D009BFC0F /* GistPlugin-APIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GistPlugin-APIKey.h"; sourceTree = "<group>"; };
 		85E65EB1156DD93D009BFC0F /* GitHubKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GitHubKit.xcodeproj; path = Vendors/GitHubKit/src/GitHubKit.xcodeproj; sourceTree = "<group>"; };
@@ -96,10 +114,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85010BBE1572BCE3004E0579 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				85010BC01572BCE3004E0579 /* Configurations */,
+				85010BC71572BCE3004E0579 /* InfoPlist.strings */,
+				85010BCA1572BCE3004E0579 /* Sources */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		85010BC01572BCE3004E0579 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				85010BC11572BCE3004E0579 /* Bundle-Debug.xcconfig */,
+				85010BC21572BCE3004E0579 /* Bundle-Release.xcconfig */,
+				85010BC31572BCE3004E0579 /* Bundle.xcconfig */,
+				85010BC41572BCE3004E0579 /* Project-Debug.xcconfig */,
+				85010BC51572BCE3004E0579 /* Project-Release.xcconfig */,
+				85010BC61572BCE3004E0579 /* Project.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		85010BCA1572BCE3004E0579 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				85010BCB1572BCE3004E0579 /* CodaPlugInsController.h */,
+				85010BCC1572BCE3004E0579 /* WikiPlugin.h */,
+				85010BCD1572BCE3004E0579 /* WikiPlugin.m */,
+				85010BCE1572BCE3004E0579 /* WikiPreviewWindow.xib */,
+				85010BCF1572BCE3004E0579 /* WikiPreviewWindowController.h */,
+				85010BD01572BCE3004E0579 /* WikiPreviewWindowController.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		85010BDD1572BE4E004E0579 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				85010BDE1572BE4E004E0579 /* Gist-Project-Debug.xcconfig */,
+				85010BDF1572BE4E004E0579 /* Gist-Project-Release.xcconfig */,
+				85010BE01572BE4E004E0579 /* Gist.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = SOURCE_ROOT;
+		};
 		85E65E74156DCD79009BFC0F = {
 			isa = PBXGroup;
 			children = (
-				85E65E94156DCDA4009BFC0F /* Configurations */,
+				85010BBE1572BCE3004E0579 /* Shared */,
 				85E65E88156DCD79009BFC0F /* Gist */,
 				85E65E81156DCD79009BFC0F /* Frameworks */,
 				85E65E80156DCD79009BFC0F /* Products */,
@@ -140,8 +204,8 @@
 		85E65E88156DCD79009BFC0F /* Gist */ = {
 			isa = PBXGroup;
 			children = (
+				85010BDD1572BE4E004E0579 /* Configurations */,
 				85E65EAF156DD76D009BFC0F /* GistPlugin-APIKey.h */,
-				85E65E95156DCDB6009BFC0F /* CodaPlugInsController.h */,
 				85E65E89156DCD79009BFC0F /* Supporting Files */,
 				85E65E9C156DD1A9009BFC0F /* GistPlugin.h */,
 				85E65E9D156DD1A9009BFC0F /* GistPlugin.m */,
@@ -156,24 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				85E65E8A156DCD79009BFC0F /* Gist-Info.plist */,
-				85E65E8B156DCD79009BFC0F /* InfoPlist.strings */,
 				85E65E8E156DCD79009BFC0F /* Gist-Prefix.pch */,
-				85E65EA4156DD4BF009BFC0F /* Localizable.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		85E65E94156DCDA4009BFC0F /* Configurations */ = {
-			isa = PBXGroup;
-			children = (
-				85E65E96156DCDD6009BFC0F /* Project.xcconfig */,
-				85E65E9A156DCE2F009BFC0F /* Project-Debug.xcconfig */,
-				85E65E9B156DCE3B009BFC0F /* Project-Release.xcconfig */,
-				85E65E97156DCDE5009BFC0F /* Bundle.xcconfig */,
-				85E65E98156DCDF2009BFC0F /* Bundle-Debug.xcconfig */,
-				85E65E99156DCDFC009BFC0F /* Bundle-Release.xcconfig */,
-			);
-			path = Configurations;
 			sourceTree = "<group>";
 		};
 		85E65EB2156DD93D009BFC0F /* Products */ = {
@@ -277,9 +326,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85E65E8D156DCD79009BFC0F /* InfoPlist.strings in Resources */,
 				85E65EA3156DD1C2009BFC0F /* AuthWindowController.xib in Resources */,
-				85E65EA6156DD4BF009BFC0F /* Localizable.strings in Resources */,
+				85010BD21572BCE3004E0579 /* Bundle-Debug.xcconfig in Resources */,
+				85010BD31572BCE3004E0579 /* Bundle-Release.xcconfig in Resources */,
+				85010BD41572BCE3004E0579 /* Bundle.xcconfig in Resources */,
+				85010BD51572BCE3004E0579 /* Project-Debug.xcconfig in Resources */,
+				85010BD61572BCE3004E0579 /* Project-Release.xcconfig in Resources */,
+				85010BD71572BCE3004E0579 /* Project.xcconfig in Resources */,
+				85010BD81572BCE3004E0579 /* InfoPlist.strings in Resources */,
+				85010BDB1572BCE3004E0579 /* WikiPreviewWindow.xib in Resources */,
+				85010BE11572BE4E004E0579 /* Gist-Project-Debug.xcconfig in Resources */,
+				85010BE21572BE4E004E0579 /* Gist-Project-Release.xcconfig in Resources */,
+				85010BE31572BE4E004E0579 /* Gist.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +366,8 @@
 			files = (
 				85E65E9E156DD1A9009BFC0F /* GistPlugin.m in Sources */,
 				85E65EA2156DD1C2009BFC0F /* AuthWindowController.m in Sources */,
+				85010BDA1572BCE3004E0579 /* WikiPlugin.m in Sources */,
+				85010BDC1572BCE3004E0579 /* WikiPreviewWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,20 +382,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		85E65E8B156DCD79009BFC0F /* InfoPlist.strings */ = {
+		85010BC71572BCE3004E0579 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				85E65E8C156DCD79009BFC0F /* en */,
+				85010BC81572BCE3004E0579 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		85E65EA4156DD4BF009BFC0F /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85E65EA5156DD4BF009BFC0F /* en */,
-			);
-			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,28 +395,28 @@
 /* Begin XCBuildConfiguration section */
 		85E65E8F156DCD79009BFC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85E65E9A156DCE2F009BFC0F /* Project-Debug.xcconfig */;
+			baseConfigurationReference = 85010BDE1572BE4E004E0579 /* Gist-Project-Debug.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		85E65E90156DCD79009BFC0F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85E65E9B156DCE3B009BFC0F /* Project-Release.xcconfig */;
+			baseConfigurationReference = 85010BDF1572BE4E004E0579 /* Gist-Project-Release.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
 		};
 		85E65E92156DCD79009BFC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85E65E98156DCDF2009BFC0F /* Bundle-Debug.xcconfig */;
+			baseConfigurationReference = 85010BC21572BCE3004E0579 /* Bundle-Release.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		85E65E93156DCD79009BFC0F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85E65E99156DCDFC009BFC0F /* Bundle-Release.xcconfig */;
+			baseConfigurationReference = 85010BC21572BCE3004E0579 /* Bundle-Release.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;

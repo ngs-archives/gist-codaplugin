@@ -1,3 +1,6 @@
 [submodule "Vendors/GitHubKit"]
 	path = Vendors/GitHubKit
 	url = git@github.com:githubkit/githubkit.git
+[submodule "Shared"]
+	path = Shared
+	url = git@github.com:ngs/codaplugins.git
