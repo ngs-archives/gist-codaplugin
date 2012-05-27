@@ -22,4 +22,4 @@ This plug-in allows you to create public and private gists from current active d
 
 [appstore]: http://bit.ly/coda2appstore
 [screen]: http://ngs.github.com/gist-codaplugin/images/screen.png
-[download]: https://github.com/downloads/ngs/gist-codaplugin/Gist.codaplugin-1.0.0.zip
+[download]: https://github.com/ngs/gist-codaplugin/downloads
