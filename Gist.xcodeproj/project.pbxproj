@@ -7,19 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		85010BD21572BCE3004E0579 /* Bundle-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC11572BCE3004E0579 /* Bundle-Debug.xcconfig */; };
-		85010BD31572BCE3004E0579 /* Bundle-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC21572BCE3004E0579 /* Bundle-Release.xcconfig */; };
-		85010BD41572BCE3004E0579 /* Bundle.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC31572BCE3004E0579 /* Bundle.xcconfig */; };
-		85010BD51572BCE3004E0579 /* Project-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC41572BCE3004E0579 /* Project-Debug.xcconfig */; };
-		85010BD61572BCE3004E0579 /* Project-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC51572BCE3004E0579 /* Project-Release.xcconfig */; };
-		85010BD71572BCE3004E0579 /* Project.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC61572BCE3004E0579 /* Project.xcconfig */; };
 		85010BD81572BCE3004E0579 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85010BC71572BCE3004E0579 /* InfoPlist.strings */; };
 		85010BDA1572BCE3004E0579 /* WikiPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85010BCD1572BCE3004E0579 /* WikiPlugin.m */; };
 		85010BDB1572BCE3004E0579 /* WikiPreviewWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85010BCE1572BCE3004E0579 /* WikiPreviewWindow.xib */; };
 		85010BDC1572BCE3004E0579 /* WikiPreviewWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85010BD01572BCE3004E0579 /* WikiPreviewWindowController.m */; };
-		85010BE11572BE4E004E0579 /* Gist-Project-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BDE1572BE4E004E0579 /* Gist-Project-Debug.xcconfig */; };
-		85010BE21572BE4E004E0579 /* Gist-Project-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BDF1572BE4E004E0579 /* Gist-Project-Release.xcconfig */; };
-		85010BE31572BE4E004E0579 /* Gist.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 85010BE01572BE4E004E0579 /* Gist.xcconfig */; };
 		85E65E83156DCD79009BFC0F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E65E82156DCD79009BFC0F /* Cocoa.framework */; };
 		85E65E9E156DD1A9009BFC0F /* GistPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E65E9D156DD1A9009BFC0F /* GistPlugin.m */; };
 		85E65EA2156DD1C2009BFC0F /* AuthWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E65EA0156DD1C2009BFC0F /* AuthWindowController.m */; };
@@ -327,17 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				85E65EA3156DD1C2009BFC0F /* AuthWindowController.xib in Resources */,
-				85010BD21572BCE3004E0579 /* Bundle-Debug.xcconfig in Resources */,
-				85010BD31572BCE3004E0579 /* Bundle-Release.xcconfig in Resources */,
-				85010BD41572BCE3004E0579 /* Bundle.xcconfig in Resources */,
-				85010BD51572BCE3004E0579 /* Project-Debug.xcconfig in Resources */,
-				85010BD61572BCE3004E0579 /* Project-Release.xcconfig in Resources */,
-				85010BD71572BCE3004E0579 /* Project.xcconfig in Resources */,
 				85010BD81572BCE3004E0579 /* InfoPlist.strings in Resources */,
 				85010BDB1572BCE3004E0579 /* WikiPreviewWindow.xib in Resources */,
-				85010BE11572BE4E004E0579 /* Gist-Project-Debug.xcconfig in Resources */,
-				85010BE21572BE4E004E0579 /* Gist-Project-Release.xcconfig in Resources */,
-				85010BE31572BE4E004E0579 /* Gist.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
