@@ -9,3 +9,4 @@
 #include "../Shared/Configurations/Project-Debug.xcconfig"
 #include "Gist.xcconfig"
 
+INSTALL_BUNDLE = 1

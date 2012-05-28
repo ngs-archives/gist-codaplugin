@@ -73,6 +73,14 @@
   return self;
 }
 
+- (BOOL)respondsToSelector:(SEL)aSelector {
+  if(aSelector == @selector(createPublicGist:) || aSelector == @selector(createPrivateGist:)) {
+    NSString *code = [self.pluginController focusedTextView:self].string;
+    return code && code.length > 0;
+  }
+  return [super respondsToSelector:aSelector];
+}
+
 #pragma mark - Accessors
 
 - (GHKGitHub *)github {
