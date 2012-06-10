@@ -14,7 +14,7 @@
 @interface GistPlugin ()
 
 - (id)initWithPlugInController:(CodaPlugInsController*)aController;
-- (void)createGist:(BOOL)isPublic;
+- (void)createGist:(BOOL)isPublic fromSelection:(BOOL)fromSelection;
 - (void)sendPendingRequest;
 - (void)showAuthWindow:(id)sender;
 
@@ -65,6 +65,22 @@
                        representedObject:nil
                            keyEquivalent:@"$^~@g"
                               pluginName:self.name];
+    [aController registerActionWithTitle:NSLocalizedString(@"Create Private Gist from selection", nil)
+                   underSubmenuWithTitle:nil
+                                  target:self
+                                selector:@selector(createPrivateGistFromSelection:)
+                       representedObject:nil
+                           keyEquivalent:@"^~@s"
+                              pluginName:self.name];
+    
+    
+    [aController registerActionWithTitle:NSLocalizedString(@"Create Public Gist from selection", nil)
+                   underSubmenuWithTitle:nil
+                                  target:self
+                                selector:@selector(createPublicGistFromSelection:)
+                       representedObject:nil
+                           keyEquivalent:@"$^~@s"
+                              pluginName:self.name];
     
     [aController registerActionWithTitle:NSLocalizedString(@"Logout", nil)
                                   target:self
@@ -74,8 +90,16 @@
 }
 
 - (BOOL)respondsToSelector:(SEL)aSelector {
-  if(aSelector == @selector(createPublicGist:) || aSelector == @selector(createPrivateGist:)) {
-    NSString *code = [self.pluginController focusedTextView:self].string;
+  CodaTextView *textView = [self.pluginController focusedTextView:self];
+  NSString *code = nil;
+  if(aSelector == @selector(createPublicGist:) ||
+     aSelector == @selector(createPrivateGist:)) {
+    code = textView.string;
+    return code && code.length > 0;
+  }
+  if(aSelector == @selector(createPublicGistFromSelection:) ||
+     aSelector == @selector(createPrivateGistFromSelection:)) {
+    code = textView.selectedText;
     return code && code.length > 0;
   }
   return [super respondsToSelector:aSelector];
@@ -101,20 +125,30 @@
 #pragma mark - Actions
 
 - (void)createPrivateGist:(id)sender {
-  [self createGist:NO];
+  [self createGist:NO fromSelection:NO];
 }
 
 - (void)createPublicGist:(id)sender {
-  [self createGist:YES];
+  [self createGist:YES fromSelection:NO];
 }
 
-- (void)createGist:(BOOL)isPublic {
+- (void)createPrivateGistFromSelection:(id)sender {
+  [self createGist:NO fromSelection:YES];
+}
+
+- (void)createPublicGistFromSelection:(id)sender {
+  [self createGist:YES fromSelection:YES];
+}
+
+- (void)createGist:(BOOL)isPublic fromSelection:(BOOL)fromSelection {
   CodaTextView *tv = [self.pluginController focusedTextView:self];
-  if(!tv||!tv.string||[tv.string isEqualToString:@""]) return;
+  if(!tv) return;
+  NSString *code = fromSelection ? tv.selectedText : tv.string;
+  if(!code || !(code.length > 0)) return;
   GHKGist *gist = [[GHKGist alloc] init];
   GHKGistFile *file = [gist addEmptyFile];
   gist.isPublic = isPublic;
-  file.content = tv.string;
+  file.content = code;
   if(tv.path) {
     NSURL *URL = [[NSURL alloc] initFileURLWithPath:tv.path isDirectory:NO];
     file.filename = URL.lastPathComponent;
