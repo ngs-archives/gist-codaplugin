@@ -11,13 +11,22 @@ This plug-in allows you to create public and private gists from current active d
 
 ## Shortcuts
 <dl>
-  <dt>^&#x2325;&#8984;G</dt>
-  <dd>Create Private Gist</dd>
+  <dt>^&#x2325;&#8984;g</dt>
+  <dd>create private gist</dd>
 </dl>
 <dl>
-  <dt>^&#x2325;&#x21E7;&#8984;G</dt>
-  <dd>Create Public Gist</dd>
+  <dt>^&#x2325;&#x21e7;&#8984;g</dt>
+  <dd>create public gist</dd>
 </dl>
+<dl>
+  <dt>^&#x2325;&#8984;s</dt>
+  <dd>create private gist from selection</dd>
+</dl>
+<dl>
+  <dt>^&#x2325;&#x21e7;&#8984;s</dt>
+  <dd>create public gist from selection</dd>
+</dl>
+
 
 
 [appstore]: http://bit.ly/coda2appstore
